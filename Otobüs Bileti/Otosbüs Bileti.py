@@ -185,34 +185,34 @@ def main():
 
                     else:
                         print("UYARI !!!!")
-                        time.sleep(1)  # koltuk dolu ise verilecek çıktı
+                        time.sleep(1)
                         print("İstediğin Koltuk Daha Önceden Rezerve Edilmiştir...")
 
             koltuklar[b] = a.get_yolcu()
 
-            if (kullanıcı == 2):  # kullanıcı 2 girer ise aşağıda ki işlemler izlenir
+            if (kullanıcı == 2):
 
                 v = 0
                 for o in koltuklar:
                     if o != None:
-                        print(str(v + 1), "-", o)  # for döngüsü ile yolcu sayısını öğreniyoruz
+                        print(str(v + 1), "-", o)
                         v = v + 1
 
                     else:
                         pass
 
-            elif (kullanıcı == 3):  # kullanıcı 3 girer ise aşağıda ki işlemler izlenir
+            elif (kullanıcı == 3):
                 u = 0
                 for u in range(0, 43):
-                    print(str(u), "-", koltuklar[u])  # hangi yolcunun hangi koltukta oturduğunu gösterir
+                    print(str(u), "-", koltuklar[u])
                     u = u + 1
 
-            elif (kullanıcı == 4):  # kullanıcı 4 girer ise aşağıda ki işlemler izlenir
+            elif (kullanıcı == 4):
                 Ü = -1
                 for o in koltuklar:
                     Ü = Ü + 1
                     if o == None:
-                        print(o)  # Boş koltukları dolana kadar none olarak gösterir
+                        print(o)
 
                     else:
                         print((Ü), "-", "DOLU")
@@ -223,10 +223,10 @@ def main():
 
 
 
-            elif (kullanıcı == 5):  # kullanıcı 5 girer ise aşağıda ki işlemler izlenir
+            elif (kullanıcı == 5):
                 print("Programdan Çıkış Yapılıyor.....")
                 time.sleep(1)
-                print("Program Sonlandırıldı...")  # 5 girer ise programdan çıkmış olur
+                print("Program Sonlandırıldı...")
                 break
 
         except:
